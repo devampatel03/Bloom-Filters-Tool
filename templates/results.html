@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Results</title>
+</head>
+<body>
+    <h2>Matching Results</h2>
+    {% if matches %}
+        <table border="1">
+            <tr>
+                <th>Dataset 1 ID</th>
+                <th>Dataset 2 ID</th>
+            </tr>
+            {% for match in matches %}
+            <tr>
+                <td>{{ match[0] }}</td>
+                <td>{{ match[1] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No matches found.</p>
+    {% endif %}
+    <br><a href="/">Upload More Files</a>
+</body>
+</html>
