@@ -1,4 +1,5 @@
-flask
-numpy
+Flask
 pandas
+numpy
 bitarray
+tqdm

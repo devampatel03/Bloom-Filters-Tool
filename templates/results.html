@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Matching Results</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <h2>Matching Results</h2>
@@ -10,14 +11,56 @@
             <tr>
                 <th>Dataset 1 ID</th>
                 <th>Dataset 2 ID</th>
+                <th>Hamming Distance</th>
+                <th>Jaccard Similarity</th>
             </tr>
             {% for match in matches %}
             <tr>
                 <td>{{ match[0] }}</td>
                 <td>{{ match[1] }}</td>
+                <td>{{ match[2] }}</td>
+                <td>{{ match[3] }}</td>
             </tr>
             {% endfor %}
         </table>
+        <br>
+        <h3>Hamming Distance Distribution</h3>
+        <canvas id="hammingChart" width="400" height="200"></canvas>
+        <h3>Jaccard Similarity Distribution</h3>
+        <canvas id="jaccardChart" width="400" height="200"></canvas>
+        <script>
+            const hammingValues = {{ hamming_values | tojson }};
+            const jaccardValues = {{ jaccard_values | tojson }};
+            
+            const hammingCtx = document.getElementById('hammingChart').getContext('2d');
+            const jaccardCtx = document.getElementById('jaccardChart').getContext('2d');
+
+            new Chart(hammingCtx, {
+                type: 'bar',
+                data: {
+                    labels: hammingValues.map((_, i) => i+1),
+                    datasets: [{
+                        label: 'Hamming Distance',
+                        data: hammingValues,
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)'
+                    }]
+                },
+                options: { responsive: true }
+            });
+
+            new Chart(jaccardCtx, {
+                type: 'bar',
+                data: {
+                    labels: jaccardValues.map((_, i) => i+1),
+                    datasets: [{
+                        label: 'Jaccard Similarity',
+                        data: jaccardValues,
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)'
+                    }]
+                },
+                options: { responsive: true }
+            });
+        </script>
     {% else %}
         <p>No matches found.</p>
     {% endif %}
