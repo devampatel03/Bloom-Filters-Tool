@@ -147,3 +147,40 @@
 2025-03-20 21:44:32,241:INFO:Starting matching: comparing 9 pairs
 2025-03-20 21:44:34,158:INFO:Finished matching. Found 9 matches.
 2025-03-20 21:44:34,162:INFO:127.0.0.1 - - [20/Mar/2025 21:44:34] "POST /upload HTTP/1.1" 200 -
+2025-03-25 15:34:37,459:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 15:34:37,459:INFO:[33mPress CTRL+C to quit[0m
+2025-03-25 15:34:37,463:INFO: * Restarting with stat
+2025-03-25 15:34:38,489:WARNING: * Debugger is active!
+2025-03-25 15:34:38,493:INFO: * Debugger PIN: 129-602-688
+2025-03-25 15:34:49,890:INFO:127.0.0.1 - - [25/Mar/2025 15:34:49] "GET / HTTP/1.1" 200 -
+2025-03-25 15:34:54,887:INFO:127.0.0.1 - - [25/Mar/2025 15:34:54] "GET / HTTP/1.1" 200 -
+2025-03-25 15:35:08,841:INFO:Starting matching: comparing 10000 pairs
+2025-03-25 15:35:12,421:INFO:Finished matching. Found 10000 matches.
+2025-03-25 15:35:12,457:INFO:127.0.0.1 - - [25/Mar/2025 15:35:12] "POST /upload HTTP/1.1" 200 -
+2025-03-25 15:36:03,722:INFO: * Detected change in 'C:\\Users\\20anu\\Bloom-Filters-Tool\\record_linkage.py', reloading
+2025-03-25 15:36:03,887:INFO: * Restarting with stat
+2025-03-25 15:36:05,017:WARNING: * Debugger is active!
+2025-03-25 15:36:05,022:INFO: * Debugger PIN: 129-602-688
+2025-03-25 15:36:10,176:INFO: * Detected change in 'C:\\Users\\20anu\\Bloom-Filters-Tool\\record_linkage.py', reloading
+2025-03-25 15:36:10,269:INFO: * Restarting with stat
+2025-03-25 15:36:11,327:WARNING: * Debugger is active!
+2025-03-25 15:36:11,330:INFO: * Debugger PIN: 129-602-688
+2025-03-25 15:36:14,201:INFO: * Detected change in 'C:\\Users\\20anu\\Bloom-Filters-Tool\\record_linkage.py', reloading
+2025-03-25 15:36:14,381:INFO: * Restarting with stat
+2025-03-25 15:36:19,303:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 15:36:19,304:INFO:[33mPress CTRL+C to quit[0m
+2025-03-25 15:36:19,306:INFO: * Restarting with stat
+2025-03-25 15:36:20,709:WARNING: * Debugger is active!
+2025-03-25 15:36:20,716:INFO: * Debugger PIN: 129-602-688
+2025-03-25 15:36:23,214:INFO:Starting matching: comparing 10000 pairs
+2025-03-25 15:36:26,698:INFO:Finished matching. Found 39 matches.
+2025-03-25 15:36:26,705:INFO:127.0.0.1 - - [25/Mar/2025 15:36:26] "POST /upload HTTP/1.1" 200 -
+2025-03-25 15:36:51,008:INFO: * Detected change in 'C:\\Users\\20anu\\Bloom-Filters-Tool\\config.py', reloading
+2025-03-25 15:36:51,167:INFO: * Restarting with stat
+2025-03-25 15:36:52,504:WARNING: * Debugger is active!
+2025-03-25 15:36:52,508:INFO: * Debugger PIN: 129-602-688
+2025-03-25 15:36:52,795:INFO:Starting matching: comparing 10000 pairs
+2025-03-25 15:36:56,586:INFO:Finished matching. Found 422 matches.
+2025-03-25 15:36:56,598:INFO:127.0.0.1 - - [25/Mar/2025 15:36:56] "POST /upload HTTP/1.1" 200 -

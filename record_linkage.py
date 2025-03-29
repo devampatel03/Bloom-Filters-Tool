@@ -81,7 +81,7 @@ def match_records(df1, df2):
     with Pool() as pool:
         for result in tqdm(pool.imap(process_comparison, tasks), total=len(tasks), desc="Matching records"):
             id1, id2, ham_dist, jaccard = result
-            if ham_dist <= 100 or jaccard >= JACCARD_THRESHOLD:
+            if ham_dist <= HAMMING_THRESHOLD or jaccard >= JACCARD_THRESHOLD:
                 matches.append((id1, id2, ham_dist, jaccard))
 
     logging.info("Finished matching. Found %d matches.", len(matches))
